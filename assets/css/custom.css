@@ -1,0 +1,241 @@
+body {
+  font-family: "Circular";
+}
+a {
+  text-decoration: none;
+}
+#progressBar {
+  width: 250px;
+}
+#albumAside p {
+  line-height: 1;
+  font-size: 0.8rem;
+}
+.overflowCustom {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.h-playBar {
+  height: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.navAnchor {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.navAnchor:hover {
+  color: white;
+  font-weight: 700;
+}
+
+.plus {
+  background-color: white;
+  padding-block: 2px;
+  padding-inline: 6px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.heart {
+  background: rgb(46, 12, 149);
+  background: linear-gradient(139deg, rgb(46, 12, 149) 37%, rgb(255, 255, 255) 100%);
+  padding-block: 2px;
+  padding-inline: 6px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.label {
+  background-color: #004537;
+  padding-block: 2px;
+  padding-inline: 6px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.cont-1 {
+  height: 60vh;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.friends div img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.button {
+  color: white;
+}
+.button:hover {
+  color: #08fc1e;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.max-h-5x {
+  max-height: 57px;
+}
+
+.gradient-spotify {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.start-60 {
+  left: 60% !important;
+}
+
+.bg-button {
+  background-color: #1e1e1e;
+}
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.secondary-light {
+  background-color: rgb(201, 191, 191);
+}
+
+.customColorA {
+  color: #aeaaaa;
+}
+.customColorA:hover {
+  color: #939292;
+  text-decoration: underline;
+}
+
+h6 a:hover {
+  text-decoration: underline;
+}
+/* PLAY BUTTON  */
+
+.positionCustom {
+  bottom: 0.6rem;
+  right: 1rem;
+}
+
+.positionCustom {
+  display: none;
+}
+
+.customCard:hover .positionCustom {
+  display: block;
+  width: 2.7rem;
+  bottom: 0.8rem;
+  right: 1rem;
+  padding-left: 0.2rem;
+  cursor: pointer;
+  background-color: #08fc1c96;
+  border-radius: 100px;
+  animation-name: rotate;
+  animation-duration: 0.7s;
+  animation-direction: inherit;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#sfondoArtista {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-bg {
+  background: rgb(31, 31, 31);
+  background: linear-gradient(185deg, rgba(31, 31, 31, 1) 0%, rgba(1, 1, 1, 1) 76%);
+}
+.bg-main {
+  background: rgb(31, 31, 31);
+  background: linear-gradient(185deg, rgba(31, 31, 31, 1) 0%, rgba(1, 1, 1, 1) 76%);
+}
+.bg-side {
+  background-color: #0e0e0e;
+}
+.bg-dark-opacity {
+  background-color: rgba(29, 29, 29, 0.8);
+}
+.bg-dark-opacity:hover {
+  background-color: rgba(41, 41, 41, 0.8);
+}
+#trueHero a:hover {
+  text-decoration: underline;
+}
+
+.backgroundAlbum:hover {
+  background-color: rgba(211, 211, 211, 0.356);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px;
+  background: #3a3a3a;
+  border-radius: 16px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  width: 10px;
+  background-color: rgb(229, 239, 229);
+  border-radius: 50%;
+  border: 2px solid rgb(229, 239, 229);
+  box-shadow: -407px 0 0 400px rgb(229, 239, 229);
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  background-color: green;
+  border: 2px solid green;
+  box-shadow: -407px 0 0 400px green;
+}
+
+/* playerButton  */
+
+.zoom {
+  transition: transform 0.02s;
+}
+.zoom:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,27 @@
+$letterSpacing: (
+  "1": 1px,
+  "2": 2px,
+  "3": 3px,
+  "4": 4px,
+  "5": 5px,
+);
+
+@each $name, $value in $letterSpacing {
+  .ls-#{$name} {
+    letter-spacing: #{$value};
+  }
+}
+@for $i from 1 through 20 {
+  .max-w-#{$i*10} {
+    max-width: #{$i * 10}px;
+  }
+  .max-h-#{$i*10} {
+    max-height: #{$i * 10}px;
+  }
+  .fix-w-#{$i*10} {
+    width: #{$i * 10}px;
+  }
+  .fix-h-#{$i*10} {
+    height: #{$i * 10}px;
+  }
+}

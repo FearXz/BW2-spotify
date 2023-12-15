@@ -1,0 +1,101 @@
+/*sass v5.3*/
+@import "./bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+// scss-docs-start import-stack
+// Configuration
+@import "./bootstrap/scss/functions";
+//var qua
+$darkgray: #141414;
+$lightgray: #c4c4c4;
+$azure: rgb(0, 166, 255);
+@import "./bootstrap/scss/variables";
+//map qua
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "purple": $purple,
+  "indigo": $indigo,
+  "pink": $pink,
+  "orange": $orange,
+  "teal": $teal,
+  "darkgray": $darkgray,
+  "lightgray": $lightgray,
+  "azure": $azure,
+);
+
+$custom-grid-breakpoints: (
+  xxxl: 1600px,
+);
+$custom-container-max-widths: (
+  xxxl: 1520px,
+);
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
+
+$h7-font-size: $font-size-base * 0.8;
+$h8-font-size: $font-size-base * 0.7;
+$h9-font-size: $font-size-base * 0.6;
+$h10-font-size: $font-size-base * 0.5;
+
+$custon-font-sizes: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
+);
+$font-sizes: map-merge($font-sizes, $custon-font-sizes);
+
+@import "./bootstrap/scss/variables-dark";
+@import "./bootstrap/scss/maps";
+@import "./bootstrap/scss/mixins";
+@import "./bootstrap/scss/utilities";
+
+// Layout & components
+@import "./bootstrap/scss/root";
+@import "./bootstrap/scss/reboot";
+@import "./bootstrap/scss/type";
+@import "./bootstrap/scss/images";
+@import "./bootstrap/scss/containers";
+@import "./bootstrap/scss/grid";
+@import "./bootstrap/scss/tables";
+@import "./bootstrap/scss/forms";
+@import "./bootstrap/scss/buttons";
+@import "./bootstrap/scss/transitions";
+@import "./bootstrap/scss/dropdown";
+@import "./bootstrap/scss/button-group";
+@import "./bootstrap/scss/nav";
+@import "./bootstrap/scss/navbar";
+@import "./bootstrap/scss/card";
+@import "./bootstrap/scss/accordion";
+@import "./bootstrap/scss/breadcrumb";
+@import "./bootstrap/scss/pagination";
+@import "./bootstrap/scss/badge";
+@import "./bootstrap/scss/alert";
+@import "./bootstrap/scss/progress";
+@import "./bootstrap/scss/list-group";
+@import "./bootstrap/scss/close";
+@import "./bootstrap/scss/toasts";
+@import "./bootstrap/scss/modal";
+@import "./bootstrap/scss/tooltip";
+@import "./bootstrap/scss/popover";
+@import "./bootstrap/scss/carousel";
+@import "./bootstrap/scss/spinners";
+@import "./bootstrap/scss/offcanvas";
+@import "./bootstrap/scss/placeholders";
+
+// Helpers
+@import "./bootstrap/scss/helpers";
+
+// Utilities
+@import "./bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+// le mie robe
+@import "./partials/customsettings";
